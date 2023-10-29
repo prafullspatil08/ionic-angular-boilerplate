@@ -5,9 +5,9 @@
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
+    "start": "ng serve --configuration=$CURRENT_ENV",
+    "build": "ng build --configuration=$CURRENT_ENV",
+    "watch": "ng build --watch --configuration $CURRENT_ENV",
     "test": "ng test",
     "lint": "ng lint"
   },
@@ -27,6 +27,7 @@
     "@capacitor/keyboard": "5.0.6",
     "@capacitor/status-bar": "5.0.6",
     "@ionic/angular": "^7.0.0",
+    "@ngx-translate/core": "^15.0.0",
     "ionicons": "^7.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
