@@ -7,6 +7,10 @@ const routes: Routes = [
     path: 'home',
     loadChildren: () => import('./features/example-feature/example-feature.module').then((m) => m.ExampleFeatureModule),
   },
+  {
+    path: 'standalone',
+    loadChildren: () => import('./features/standalone-component/standalone-component.component').then((m) => m.StandaloneComponentComponent),
+  },
 ];
 
 @NgModule({
