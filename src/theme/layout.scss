@@ -1,0 +1,39 @@
+@import 'sizing.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: $size-md;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -$size-md;
+
+  &--2 {
+    > .grid__item {
+      width: 50%;
+    }
+  }
+
+  &--3 {
+    > .grid__item {
+      width: 33.3%;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    padding: $size-md;
+  }
+}
+
+.footer {
+  margin-top: auto;
+}

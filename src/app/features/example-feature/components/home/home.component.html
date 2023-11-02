@@ -9,5 +9,117 @@
     <ion-toolbar>
       <ion-title size="large">{{ "HOME_PAGE_TITLE" | translate }}</ion-title>
     </ion-toolbar>
-  </ion-header>
+  </ion-header> 
+
+
+  <div id="container">
+    <div class="text-align--left margin-left--md margin-top--md">
+      <div class="margin-bottom--lg">
+        <h3>Text Styles</h3>
+
+        <div class="margin-left--md">
+          <h1>Header 1</h1>
+          <h2>Header 2</h2>
+          <h3>Header 3</h3>
+          <h4>Header 4</h4>
+          <h5>Header 5</h5>
+          <h6>Header 6</h6>
+          <p>Paragraph</p>
+        </div>
+      </div>
+
+      <div class="margin-bottom--lg">
+        <h3>Link</h3>
+
+        <div class="margin-left--md">
+          <a class="c-link margin-bottom--md">Link</a>
+
+          <a class="c-link">
+            <ion-icon name="airplane-outline"></ion-icon>
+            Link with icon
+          </a>
+        </div>
+      </div>
+
+      <div class="margin-bottom--lg">
+        <h3>Button</h3>
+
+        <div class="margin-left--md">
+          <app-button class="margin-bottom--md">Button</app-button>
+
+          <app-button class="margin-bottom--md" icon="airplane-outline"> Button with Icon </app-button>
+
+          <app-button class="margin-bottom--md" icon="airplane-outline" [arrow]="true">
+            Button with Icon and Arrow
+          </app-button>
+
+          <app-button class="margin-bottom--md" [loading]="true" [disabled]="false">
+            Button Loading and Disabled
+          </app-button>
+
+          <app-button class="margin-bottom--md" [outline]="true" [inverted]="true">
+            Button Inverted Outline
+          </app-button>
+
+          <app-button class="margin-bottom--md" size="lg"> Button Outline </app-button>
+
+          <app-button class="margin-bottom--md" [clear]="true"> Button Outline </app-button>
+        </div>
+      </div>
+
+      <div class="margin-bottom--lg">
+        <h3>Cards</h3>
+
+        <div class="margin-left--md">
+          <div
+            class="card card--illustrated card--inverted background--primary-300 e-card-example margin-bottom--md">
+            <h3 class="card__title">Card Title</h3>
+            <p class="card__description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia nobis quod vel recusandae earum
+              eum explicabo, magnam, inventore.
+            </p>
+
+            <app-button class="card__button" [inverted]="true" size="sm"> Learn More </app-button>
+          </div>
+
+          <div class="card card--illustrated e-card-example-2 margin-bottom--md">
+            <h3 class="card__title">Card Title</h3>
+            <p class="card__description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia nobis quod vel recusandae earum
+              eum explicabo, magnam, inventore.
+            </p>
+
+            <app-button class="card__button" size="sm"> Learn More </app-button>
+          </div>
+
+          <div class="card card--center margin-bottom--md">
+            <ion-icon class="card__icon" name="rainy"></ion-icon>
+            <h3 class="card__title">Card Title</h3>
+            <p class="card__description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia nobis quod vel recusandae earum
+              eum explicabo, magnam, inventore.
+            </p>
+
+            <app-button class="card__button" size="sm"> Learn More </app-button>
+          </div>
+
+          <div class="card card--center">
+            <img class="card__image" src="../../../../../assets/images/illustration/illustration-1.png" />
+
+            <h3 class="card__title">Card Title</h3>
+            <p class="card__description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia nobis quod vel recusandae earum
+              eum explicabo, magnam, inventore.
+            </p>
+
+            <app-button class="card__button" size="sm"> Learn More </app-button>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+
 </ion-content>

@@ -2,10 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { IonicModule } from '@ionic/angular';
+import { ButtonComponent } from './button/button.component';
 
 
 @NgModule({
   declarations: [
+    ButtonComponent
   ],
   imports: [
     CommonModule,
@@ -14,7 +16,8 @@ import { IonicModule } from '@ionic/angular';
   ],
   exports: [
     TranslateModule,
-    IonicModule
+    IonicModule,
+    ButtonComponent
   ]
 })
 export class SharedModule { }

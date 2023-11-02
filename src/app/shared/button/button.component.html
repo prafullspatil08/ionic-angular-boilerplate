@@ -1,0 +1,20 @@
+<button
+  class="btn"
+  [class.btn--lg]="size === 'lg'"
+  [class.btn--sm]="size === 'sm'"
+  [class.btn--outline]="isOutline"
+  [class.btn--clear]="isClear"
+  [class.btn--inverted]="isInverted"
+  [disabled]="disabled">
+  <span *ngIf="loading" class="btn__loading">
+    <ion-spinner color="white"></ion-spinner>
+  </span>
+
+  <ion-icon class="btn__icon" *ngIf="!loading && icon" [name]="icon"></ion-icon>
+
+  <span>
+    <ng-content></ng-content>
+  </span>
+
+  <ion-icon class="btn__arrow" *ngIf="hasArrow" name="chevron-forward-outline"></ion-icon>
+</button>
