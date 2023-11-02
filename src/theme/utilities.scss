@@ -163,17 +163,14 @@ $directions: 'left', 'right', 'top', 'bottom';
 
 // COLORS AND BACKGROUND
 $colors: (
-  'primary-500': var(--color-primary-500),
-  'primary-300': var(--color-primary-300),
-  'primary-700': var(--color-primary-700),
+  'primary-500': var(--ion-color-primary),
+  'primary-300': var(--ion-color-primary-tint),
+  'primary-700': var(--ion-color-primary-shade),
   'white': white,
   'black': var(--color-gray-900),
-  'success': var(--color-success),
-  'warning': var(--color-warning),
-  'error': var(--color-error),
-  'blue-100': var(--color-blue-100),
-  'blue-500': var(--color-blue-500),
-  'blue-700': var(--color-blue-700),
+  'success': var(--ion-color-success),
+  'warning': var( --ion-color-warning),
+  'error': var(--ion-color-danger),
   'gray-400': var(--color-gray-400),
 );
 
