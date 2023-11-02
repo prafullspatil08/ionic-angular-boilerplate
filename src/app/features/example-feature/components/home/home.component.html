@@ -1,3 +1,13 @@
-<p>
-  <strong>{{ 'PRESENTATION_TITLE' | translate }}</strong>
-</p>
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>{{ "HOME_PAGE_TITLE" | translate }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">{{ "HOME_PAGE_TITLE" | translate }}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>
